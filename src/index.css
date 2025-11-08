@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Exo', sans-serif;
+}
+
+.title-text {
+  font-size: 2rem;
+}
+
+.body-text {
+  font-size: 0.875rem;
+}
+
+.copyright-text {
+  font-size: 0.75rem;
+}
+
+.outer-container {
+  padding: 20vh 5vw !important;
+}
+
+.content-container {
+  width: 90vw;
+  height: 60vh;
+  max-height: none;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .outer-container {
+    padding: 20vh 5vw !important;
+  }
+
+  .content-container {
+    width: 100%;
+    height: 60vh;
+    max-width: 650px;
+    max-height: none;
+  }
+
+  .title-text {
+    font-size: 3rem;
+  }
+
+  .body-text {
+    font-size: 1rem;
+  }
+}

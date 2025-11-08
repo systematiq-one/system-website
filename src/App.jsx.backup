@@ -1,0 +1,118 @@
+import LetterGlitch from "./components/ui/letter-glitch.jsx";
+
+function App() {
+  return (
+    <div style={{ position: 'fixed', inset: 0, overflow: 'hidden' }}>
+      <LetterGlitch
+        glitchSpeed={50}
+        centerVignette={false}
+        outerVignette={true}
+        smooth={true}
+        glitchColors={['#7287fd', '#2b377d', '#9dabfc']}
+        /* glitchColors={['#5a85c7', '#89b4fa', '#b3d1fc']} */
+        /* glitchColors={['#0f766e', '#14b8a6', '#5eead4']} */
+      />
+      
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '20px'
+      }}>
+        <div style={{
+          backdropFilter: 'blur(10px)',
+          backgroundColor: 'rgba(114, 135, 253, 0.1)',
+          /* backgroundColor: 'rgba(255, 255, 255, 0.1)', */
+          borderRadius: '24px',
+          padding: '48px',
+          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
+          border: '1px solid rgba(255, 255, 255, 0.2)',
+          maxWidth: '650px',
+          width: '100%'
+        }}>
+          <h1 style={{
+            fontSize: '3rem',
+            fontWeight: '300',
+            letterSpacing: '0.2em',
+            color: 'white',
+            textAlign: 'center',
+            marginBottom: '32px'
+          }}>
+            XANDER
+          </h1>
+          
+          <p style={{
+            fontSize: '1rem',
+            /* fontSize: '0.875rem', */
+            color: 'rgb(114, 135, 253, 0.8)',
+            /* color: 'rgba(153, 246, 228, 0.8)', */
+            textAlign: 'center',
+            marginBottom: '8px'
+          }}>
+            a.k.a. alex sanea. sancho
+          </p>
+          
+          
+          <div style={{
+            marginTop: '48px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '3px',
+            /* gap: '8px', */
+            fontSize: '1rem',
+            /* fontSize: '0.875rem', */
+            color: 'rgba(255, 255, 255, 0.7)',
+            textAlign: 'center'
+          }}>
+            <p>writing python code</p>
+            <p>using arch linux btw</p>
+            <p>learning data science</p>
+            <p>reading any good books</p>
+            <p>observing crypto markets</p>
+            <p>playing steam & playstation</p>
+            <p>enthusiast about open-source</p>
+          </div> 
+          
+          <div style={{
+            marginTop: '48px',
+            display: 'flex',
+            justifyContent: 'center'
+          }}>
+            <button style={{
+              width: '48px',
+              height: '48px',
+              borderRadius: '50%',
+              border: '1px solid rgba(255, 255, 255, 0.3)',
+              backgroundColor: 'transparent',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              cursor: 'pointer',
+              transition: 'background-color 0.2s'
+            }}>
+              <svg style={{ width: '20px', height: '20px', color: 'rgba(255, 255, 255, 0.7)' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+            </button>
+          </div>
+          
+          <p style={{
+            marginTop: '32px',
+            fontSize: '0.75rem',
+            color: 'rgba(255, 255, 255, 0.4)',
+            textAlign: 'center'
+          }}>
+            all rights reserved © 2025
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default App;
